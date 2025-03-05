@@ -36,7 +36,10 @@ Account for normal User (Some permissions are Restricted):
 This is a small demonstration of some functionalities of our website.
 <br></br>
 
+<!---
 ![](/img/demo-vid.gif)
+-->
+
 
 
 As the clip shows, we can perform some simple operations such as:
