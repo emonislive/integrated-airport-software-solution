@@ -1,27 +1,6 @@
-<<<<<<< HEAD
-# integrated-airport-software-solution
-=======
-<div align="center">
-VIETNAM NATIONAL UNIVERSITY, HO CHI MINH CITY
-<br />
-UNIVERSITY OF TECHNOLOGY
-<br />
-FACULTY OF COMPUTER SCIENCE AND ENGINEERING
-<br />
-<br />
 
-<img src="https://hcmut.edu.vn/img/nhanDienThuongHieu/01_logobachkhoasang.png" alt="logo" style="width: 550px; height: auto; align: center">
 
-<br />
-<br />
-<img src="https://img.shields.io/github/stars/thaiquangphat/airport_management?color=white&logo=github">&emsp;<img src="https://img.shields.io/github/last-commit/thaiquangphat/airport_management?color=blue">
-<br />
-<img src="https://img.shields.io/github/languages/top/thaiquangphat/airport_management?color=yellow&logo=javascript&logoColor=yellow">&emsp;<img src="https://img.shields.io/github/repo-size/thaiquangphat/airport_management?color=orange&label=size&logo=git&logoColor=orange">
-<br />
-
-</div>
-
-<h2 align="center">💡 Project. Airport Management System 💡</h2>
+<h2 align="center">💡 Project. Integrated Airport Software Solution 💡</h2>
 
 ![](/img/homepage.png)
 
@@ -68,11 +47,3 @@ As the clip shows, we can perform some simple operations such as:
 
 - **Handling Errors**: As users may make mistakes, we provide a mechanism to prevent so the database remains stable.
 
-<h2 align="center">💟 Contributors 💟</h2>
-
-<div align="center">
-    <a href="https://github.com/thaiquangphat"><img src="https://avatars.githubusercontent.com/u/135941272?v=4" title="thaiquangphat" width="50" height="50"></a>
-    <a href="https://github.com/pdz1804"><img src="https://avatars.githubusercontent.com/u/123137268?v=4" title="pdz1804" width="50" height="50"></a>
-    <a href="https://github.com/Frankie2030"><img src="https://avatars.githubusercontent.com/u/144931593?v=4" title="koi" width="50" height="50"></a>
-</div>
->>>>>>> 65f51f4 (Added new files)
