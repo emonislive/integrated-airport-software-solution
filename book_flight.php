@@ -1,21 +1,19 @@
 <?php
-include 'db_connect.php';
+if (!isset($_GET['flightid']) || empty($_GET['flightid'])) {
+    die("<div style='color: red;'>❌ Error: Flight ID is missing in the URL.</div>");
+}
 
 $flightID = $_GET['flightid'];
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $numberOfTickets = $_POST['NumberOfTickets'];
-    // Here, you can add the code to save the booking details to the database
-    
-    // Redirect to another page or display a confirmation message
-}
-
-// Fetch flight details
 $stmt = $conn->prepare("SELECT * FROM Flight WHERE FlightID = ?");
 $stmt->bind_param("i", $flightID);
 $stmt->execute();
 $result = $stmt->get_result();
-$row = $result->fetch_assoc();
+$row = $result ? $result->fetch_assoc() : null;
+
+if (!$row) {
+    die("<div style='color: red;'>❌ Error: No flight found with ID = $flightID</div>");
+}
 
 // Fetch available seats
 $stmtSeats = $conn->prepare("SELECT * FROM Seat WHERE FlightID = ? AND Status = 'Available'");
@@ -23,6 +21,8 @@ $stmtSeats->bind_param("i", $flightID);
 $stmtSeats->execute();
 $resultSeats = $stmtSeats->get_result();
 $availableSeats = $resultSeats->fetch_all(MYSQLI_ASSOC);
+?>
+
 ?>
 
 <h2>Booking for Flight <?php echo $row['FlightCode']; ?></h2>
