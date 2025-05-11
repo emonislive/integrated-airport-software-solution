@@ -45,6 +45,11 @@ $fid =  $_GET['id'];
                                 }
                             ?>
                             <dl>
+<?php
+$from = isset($row['SourceAP']) ? $row['SourceAP'] : 'N/A';
+$to = isset($row['DestAP']) ? $row['DestAP'] : 'N/A';
+?>
+
                                 <dt><b class="border-bottom border-primary">From</b></dt>
                                 <dd><?php echo ucwords($from) ?></dd>
                             </dl>
